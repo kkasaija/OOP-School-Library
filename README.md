@@ -60,11 +60,11 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [ ENUMERABLES] <a name="about-project"></a>
+# 📖 [SCHOOL LIBRARY] <a name="about-project"></a>
 
-> A Ruby script that has any?, all? and filter methods recreated.
+> 
 
-**[ENUMERABLES]** is a...
+**[SCHOOL LIBRARY]** is a basic school library application
 
 ## 🛠 Built With <a name="built-with">Ruby</a>
 
@@ -99,9 +99,9 @@ After you're finished please remove all the comments and instructions!
 
 > Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[Person class]**
+- **[Student class]**
+- **[Teacher class]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -207,6 +207,7 @@ Example:
 
 - GitHub: [Kasaija-Kenneth](https://github.com/Kasaija-Kenneth)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/kasaija-kenneth)
+- Email Address:  <a href="mailto:kasaijak@gmail.com?subject=The%20subject%20of%20the%20mail">My G-mail Account</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -270,8 +271,6 @@ I would like to thank...
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [GPL](https://github.com/Kasaija-Kenneth/OOP-School-Library/blob/dev/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
