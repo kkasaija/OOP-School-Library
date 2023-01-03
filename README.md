@@ -205,14 +205,6 @@ Example:
 
 > Mention all of the collaborators of this project.
 
-👤 **Shuhad Loofer**
-
-- GitHub: [@Shuhad786](https://github.com/Shuhad786)
-
-- LinkedIn: [LinkedIn](https://linkedin.com/in/shuhad-loofer)
-
-👤 **Author2**
-
 - GitHub: [Kasaija-Kenneth](https://github.com/Kasaija-Kenneth)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/kasaija-kenneth)
 
