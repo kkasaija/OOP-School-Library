@@ -207,6 +207,7 @@ Example:
 
 - GitHub: [Kasaija-Kenneth](https://github.com/Kasaija-Kenneth)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/kasaija-kenneth)
+- Email Address:  <a href="mailto:kasaijak@gmail.com?subject=The%20subject%20of%20the%20mail">My G-mail Account</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
