@@ -60,11 +60,11 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [ ENUMERABLES] <a name="about-project"></a>
+# 📖 [SCHOOL LIBRARY] <a name="about-project"></a>
 
-> A Ruby script that has any?, all? and filter methods recreated.
+> 
 
-**[ENUMERABLES]** is a...
+**[SCHOOL LIBRARY]** is a basic school library application
 
 ## 🛠 Built With <a name="built-with">Ruby</a>
 
@@ -99,9 +99,9 @@ After you're finished please remove all the comments and instructions!
 
 > Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[Person class]**
+- **[Student class]**
+- **[Teacher class]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
