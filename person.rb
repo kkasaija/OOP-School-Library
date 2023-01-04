@@ -1,40 +1,42 @@
-# Nameable class
+# class Nameable
 class Nameable
   def correct_name
     raise NotImplementedError
   end
 end
 
-# Person class
 class Person < Nameable
-  attr_accessor :name, :age
+  attr_accessor :name, :age, :rentals
   attr_reader :id
 
-  def correct_name
-    @name
-  end
-
-  def initialize(age, name, parent_permission: true)
+  def initialize(age, name = 'Unkonwn', parent_permission: true)
     super()
     @id = Random.rand(1..1000)
     @name = name
     @age = age
     @parent_permission = parent_permission
+    @rentals = []
   end
 
-  def can_use_services?
-    of_age? || @parent_permission
-    true
+  def can_use_service
+    @parent_permission || @age >= 18
   end
 
   private
 
-  def of_age?
+  def of_age
     @age >= 18
+  end
+
+  def correct_name
+    @name
+  end
+
+  def add_rental(date, book)
+    Rental.new(date, book, self)
   end
 end
 
-# Base Decorator class
 class BaseDecorator < Nameable
   attr_accessor :nameable
 
@@ -48,14 +50,12 @@ class BaseDecorator < Nameable
   end
 end
 
-# Capitalize Decorator class
 class CapitalizeDecorator < BaseDecorator
   def correct_name
     @nameable.correct_name.capitalize
   end
 end
 
-# Capitalize Decorator class
 class TrimmerDecorator < BaseDecorator
   def correct_name
     return @nameable.correct_name[0...10] if @nameable.correct_name.length > 10
@@ -63,10 +63,3 @@ class TrimmerDecorator < BaseDecorator
     @nameable.correct_name
   end
 end
-
-person = Person.new(22, 'maximilianus')
-puts person.correct_name
-capitalized_person = CapitalizeDecorator.new(person)
-puts capitalized_person.correct_name
-capitalized_trimmed_person = TrimmerDecorator.new(capitalized_person)
-puts capitalized_trimmed_person.correct_name

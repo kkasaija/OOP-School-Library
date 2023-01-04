@@ -134,6 +134,7 @@ Example command:
  gem install rails
 ```
  -->
+ install ruby
 
 ### Setup
 
@@ -147,6 +148,8 @@ Example commands:
   git clone git@github.com:myaccount/my-project.git
 ```
 --->
+git clone git@github.com:Kasaija-Kenneth/OOP-School-Library.git
+cd OOP-School-Library
 
 ### Install
 
@@ -227,7 +230,7 @@ Example:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Kasaija-Kenneth/OOP-School-Library/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
