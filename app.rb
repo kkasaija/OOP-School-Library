@@ -19,7 +19,9 @@ class App
 
   def list_people
     people = [*@teachers, *@students]
-    people.each_with_index { |person, i| print "(#{i}) Name: \"#{person.name}\", ID: \"#{person.id}\", Age: \"#{person.age}\"\n" }
+    people.each_with_index do |person, i|
+      print "(#{i}) Name: \"#{person.name}\", ID: \"#{person.id}\", Age: \"#{person.age}\"\n"
+    end
   end
 
   def student
