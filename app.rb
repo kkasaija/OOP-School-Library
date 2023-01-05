@@ -23,28 +23,26 @@ class App
   end
 
   def create_person
-    print 'Do you want to create a student (1) or a teacher (2)? [input a number]:'
+    print 'To create a person, type (1) for Student or (2) for Teacher: '
     input = gets.chomp.to_i
-
     case input
     when 1
-      print 'Age:'
+      print 'Age: '
       age = gets.chomp.to_i
-      print 'Name:'
+      print 'Name: '
       name = gets.chomp
-      print 'Enter Classroom:'
+      print 'Enter Classroom: '
       classroom = gets.chomp
       new_student = Student.new(age, classroom)
       new_student.name = name
       @students << new_student
       puts "#{new_student.name} added successfully"
-
     when 2
-      print 'Age:'
+      print 'Age: '
       age = gets.chomp.to_i
-      print 'Name:'
+      print 'Name: '
       name = gets.chomp
-      print 'Specialization:'
+      print 'Specialization: '
       specialization = gets.chomp
       new_teacher = Teacher.new(age, name, specialization)
       new_teacher.name = name
