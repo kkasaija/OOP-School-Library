@@ -47,6 +47,7 @@ class App
       print 'Specialization:'
       specialization = gets.chomp
       new_teacher = Teacher.new(age, name, specialization)
+      new_teacher.name = name
       @teachers << new_teacher
       puts "#{new_teacher.name} added successfully"
     end
