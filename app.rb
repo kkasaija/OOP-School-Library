@@ -19,7 +19,7 @@ class App
 
   def list_people
     people = [*@teachers, *@students]
-    people.each_with_index { |person, i| print "(#{i}) Name: \"#{person.name}\", Age: \"#{person.age}\"\n" }
+    people.each_with_index { |person, i| print "(#{i}) Name: \"#{person.name}\", ID: \"#{person.id}\", Age: \"#{person.age}\"\n" }
   end
 
   def student
@@ -58,9 +58,9 @@ class App
   end
 
   def create_book
-    print 'Book Title:'
+    print 'Book Title: '
     title = gets.chomp
-    print 'Book Author:'
+    print 'Book Author: '
     author = gets.chomp
     new_book = Book.new(title, author)
     @books << new_book
@@ -71,10 +71,10 @@ class App
     print "Select a book from the following list by number \n"
     list_books
     book = gets.chomp.to_i
-    print "select a person \n"
+    print "select a person from the following list by number (not id) \n"
     list_people
     person = gets.chomp.to_i
-    print 'select a date'
+    print 'select a date [format: yyyy/mm/dd]: '
     date = gets.chomp
     people = [*@teachers, *@students]
     new_rental = Rental.new(date, @books[book], people[person])
@@ -83,8 +83,8 @@ class App
   end
 
   def list_rentals
-    print 'Enter person id'
-    id = gets.chomp
+    print 'Enter person id: '
+    id = gets.chomp.to_i
     @rentals.each do |i|
       print "Date: #{i.date}, Title: #{i.book.title}, Author: #{i.book.author}\n" if id == i.person.id
     end
