@@ -26,6 +26,7 @@ class App
     print 'To create a person, type (1) for Student or (2) for Teacher: '
     input = gets.chomp.to_i
     case input
+
     when 1
       print 'Age: '
       age = gets.chomp.to_i
@@ -37,6 +38,7 @@ class App
       new_student.name = name
       @students << new_student
       puts "#{new_student.name} added successfully"
+
     when 2
       print 'Age: '
       age = gets.chomp.to_i
