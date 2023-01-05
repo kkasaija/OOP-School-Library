@@ -22,34 +22,38 @@ class App
     people.each_with_index { |person, i| print "(#{i}) Name: \"#{person.name}\", Age: \"#{person.age}\"\n" }
   end
 
+  def student
+    print 'Age: '
+    age = gets.chomp.to_i
+    print 'Name: '
+    name = gets.chomp
+    print 'Enter Classroom: '
+    classroom = gets.chomp
+    new_student = Student.new(age, classroom)
+    new_student.name = name
+    @students << new_student
+    puts "#{new_student.name} added successfully"
+  end
+
+  def teacher
+    print 'Age: '
+    age = gets.chomp.to_i
+    print 'Name: '
+    name = gets.chomp
+    print 'Specialization: '
+    specialization = gets.chomp
+    new_teacher = Teacher.new(age, name, specialization)
+    new_teacher.name = name
+    @teachers << new_teacher
+    puts "#{new_teacher.name} added successfully"
+  end
+
   def create_person
     print 'To create a person, type (1) for Student or (2) for Teacher: '
     input = gets.chomp.to_i
     case input
-
-    when 1
-      print 'Age: '
-      age = gets.chomp.to_i
-      print 'Name: '
-      name = gets.chomp
-      print 'Enter Classroom: '
-      classroom = gets.chomp
-      new_student = Student.new(age, classroom)
-      new_student.name = name
-      @students << new_student
-      puts "#{new_student.name} added successfully"
-
-    when 2
-      print 'Age: '
-      age = gets.chomp.to_i
-      print 'Name: '
-      name = gets.chomp
-      print 'Specialization: '
-      specialization = gets.chomp
-      new_teacher = Teacher.new(age, name, specialization)
-      new_teacher.name = name
-      @teachers << new_teacher
-      puts "#{new_teacher.name} added successfully"
+    when 1 then student
+    when 2 then teacher
     end
   end
 
