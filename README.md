@@ -25,14 +25,14 @@ OPTIONAL SECTIONS:
 After you're finished please remove all the comments and instructions!
 -->
 
-<div align="center">
+<!-- <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <!-- <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
   <h3><b>Microverse README Template</b></h3>
 
-</div>
+</div> -->
 
 <!-- TABLE OF CONTENTS -->
 
@@ -64,15 +64,15 @@ After you're finished please remove all the comments and instructions!
 
 > 
 
-**[SCHOOL LIBRARY]** is a basic school library application
+**[SCHOOL LIBRARY]** This is a school library app implemented using classes, objects, encapsulation and inheritance with Ruby.
 
 ## 🛠 Built With <a name="built-with">Ruby</a>
 
 ### Tech Stack <a name="tech-stack">Ruby</a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
+<!-- > Describe the tech stack and include only the relevant sections that apply to your project. -->
 
-<details>
+<!-- <details>
   <summary>Client</summary>
   <ul>
     <li><a href="https://reactjs.org/">React.js</a></li>
@@ -91,35 +91,24 @@ After you're finished please remove all the comments and instructions!
   <ul>
     <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
   </ul>
-</details>
+</details> -->
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **[Person class with Decorators]**
-- **[Student class]**
-- **[Teacher class]**
+- **[Add new students or teachers]**
+- **[Add new books]**
+- **[Save records of who borrowed a given book and when]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
-
 ## 💻 Getting Started <a name="getting-started"></a>
-
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -127,78 +116,38 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
- install ruby
+ > - install ruby
+ > - Signup to Github
 
 ### Setup
 
 Clone this repository to your desired folder:
+> Command:
 
-<!--
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
-git clone git@github.com:Kasaija-Kenneth/OOP-School-Library.git
-cd OOP-School-Library
+- `git clone git@github.com:Kasaija-Kenneth/OOP-School-Library.git`
+- `cd OOP-School-Library`
 
 ### Install
 
-Install this project with:
+- After opening the files in Visual Studio Code, open the VS Code integrated terminal and run the following commands:
 
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
-```
---->
+> bundle init
+> bundle install
 
 ### Usage
 
-To run the project, execute the following command:
+- Run the command in your terminal below to run the ruby program
 
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
+>  ruby main.rd to run
 
 ### Run tests
+- Run the below command in your terminal for linter checks
 
-To run tests, run the following command:
-
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
+> rubocop
 
 ### Deployment
 
 You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
-```
- -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
