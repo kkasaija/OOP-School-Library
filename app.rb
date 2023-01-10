@@ -18,15 +18,16 @@ class App
 
   def list_people
     @people.each_with_index do |person, i|
-      puts "(#{i}) #{person.is_a?(Student) ? '[Student]' : '[Teacher]'} Name: '#{person.name}', Id: '#{person.id}', Age: '#{person.age}'"
+      print "(#{i}) #{person.is_a?(Student) ? '[Student]' : '[Teacher]'} "
+      puts "Name: \"#{person.name}\", Id: \"#{person.id}\", Age: \"#{person.age}\""
     end
   end
 
   def list_rentals
-    print 'Enter person id: '
-    id = gets.chomp.to_i
+    print 'Enter person id '
+    id = gets.chomp
     @rentals.each do |i|
-      print "Date: #{i.date}, Title: '#{i.book.title}', Author: '#{i.book.author}'\n" if id == i.person.id
+      print "Date: #{i.date}, Title: #{i.book.title}, Author: #{i.book.author}\n" if id == i.person.id
     end
   end
 end
