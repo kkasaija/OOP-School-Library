@@ -99,6 +99,10 @@ After you're finished please remove all the comments and instructions!
 
 - **[Add new students or teachers]**
 - **[Add new books]**
+- **[List Books]**
+- **[List persons]**
+- **[Create Rentals]**
+- **[List Rentals]**
 - **[Save records of who borrowed a given book and when]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -155,11 +159,16 @@ You can deploy this project using:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
+👤 **Kasaija Kenneth**
 
 - GitHub: [Kasaija-Kenneth](https://github.com/Kasaija-Kenneth)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/kasaija-kenneth)
 - Email Address:  <a href="mailto:kasaijak@gmail.com?subject=The%20subject%20of%20the%20mail">My G-mail Account</a>
+
+👤 **Sendy Inieke**
+
+- GitHub: [@uisendy](https://github.com/uisendy)
+- LinkedIn: [sendyinieke](https://www.linkedin.com/in/sendyinieke/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -167,9 +176,9 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
+> -[ ] **[Unit test]**
 
-- [ ] **[add it to an application]**
+> -[ ] **[Preserve Data]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
