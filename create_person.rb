@@ -41,15 +41,15 @@ class CreatePerson
     gets.chomp
   end
 
-  def class_get
-    print 'Enter Classroom: '
-    gets.chomp
+  def permission_get
+    print 'Has parent permission? [Y/N]: '
+    gets.chomp.downcase
   end
 
   def create_student
     age, name = age_name
-    classroom = class_get
-    Student.new(age, name, classroom)
+    allowed = permission_get
+    Student.new(age, name, allowed)
   end
 
   def create_teacher
