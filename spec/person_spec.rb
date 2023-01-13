@@ -1,4 +1,4 @@
-require_relative '../person.rb'
+require_relative '../person'
 
 describe Person do
   context 'Unit Test: ' do
