@@ -1,6 +1,6 @@
 require_relative '../person'
-require_relative '../book.rb'
-require_relative '../rental.rb'
+require_relative '../book'
+require_relative '../rental'
 
 describe Person do
   context 'Unit Test: ' do

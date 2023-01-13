@@ -10,7 +10,7 @@ describe Classroom do
   end
   context 'Add student:' do
     it 'Should add Student' do
-      student = Student.new(30, 'Musinguzi', "Pri-5")
+      student = Student.new(30, 'Musinguzi', 'Pri-5')
       expect(student.classroom).to eq('Pri-5')
     end
   end

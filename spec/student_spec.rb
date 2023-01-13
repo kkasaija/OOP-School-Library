@@ -1,7 +1,7 @@
 require_relative '../student'
 
 describe Student do
-  student = Student.new(30, 'Musinguzi', "class-6")
+  student = Student.new(30, 'Musinguzi', 'class-6')
   describe 'Student details' do
     it 'should be of type Student' do
       expect(student.age).to eql(30)
@@ -10,8 +10,7 @@ describe Student do
       expect(student.play_hooky).to eql('¯(ツ)/¯')
     end
     it "should belong to 'class-6' classroom" do
-      expect(student.classroom).to eql("class-6")
+      expect(student.classroom).to eql('class-6')
     end
-
   end
 end
