@@ -1,11 +1,13 @@
-require_relative '../student.rb'
+require './spec_helper'
 
 describe Student do
-  context 'Unit Test: ' do
-    it 'create a new Student when Student class is instantiated' do
-      new_student = Person.new(23, 'Elvis Markson')
-      expect(new_student.age).to eq 23
-      expect(new_student.name).to eq 'Elvis Markson'
+  student = Student.new(30, 'Musinguzi', false)
+  describe 'Student details' do
+    it 'should be of type Student' do
+      expect(student.type).to eql('Student')
+    end
+    it "should have a shape of '¯(ツ)/¯'" do
+      expect(student.play_hookey).to eql('¯\(ツ)/¯')
     end
   end
 end
