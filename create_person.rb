@@ -1,3 +1,5 @@
+require './persist'
+
 class CreatePerson
   def initialize(people)
     @people = people
@@ -9,10 +11,12 @@ class CreatePerson
     when 1
       new_student = create_student
       add_to_collection(new_student)
+      store_person('student')
 
     when 2
       new_teacher = create_teacher
       add_to_collection(new_teacher)
+      store_person('teacher')
 
     else
       puts 'Sorry, The selected option is not defined '
@@ -61,5 +65,14 @@ class CreatePerson
   def add_to_collection(person)
     @people.push(person)
     puts "#{person.name} added successfully! "
+  end
+
+  def store_person(type)
+    stored_people = Persist.new('person.json')
+    people = stored_people.load
+    @people.each do |person|
+      people << { age: person.age, name: person.name, id: person.id, type: type }
+    end
+    stored_people.save(people)
   end
 end
