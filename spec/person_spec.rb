@@ -18,5 +18,11 @@ describe Person do
       date = '23/01/12'
       expect(new_person.add_rental(date, book).date).to eq('23/01/12')
     end
+    it 'should return the correct age 45' do
+      expect(new_person.age).to eql(45)
+    end
+    it 'should return the correct name' do
+      expect(new_person.name).to eql('Prof. Blessing Blast')
+    end
   end
 end
