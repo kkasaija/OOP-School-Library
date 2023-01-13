@@ -31,7 +31,8 @@ class App
       puts 'No record is found'
     else
       loaded_people.each_with_index do |person, i|
-        puts "(#{i}) #{person['type'] == 'student' ? '[Student]' : '[Teacher]'},  Name: '#{person['name']}', Id: '#{person['id']}', Age: '#{person['age']}'"
+        print "(#{i}) #{person['type'] == 'student' ? '[Student]' : '[Teacher]'}"
+        puts "Name: '#{person['name']}', Id: '#{person['id']}', Age: '#{person['age']}'"
       end
     end
   end
