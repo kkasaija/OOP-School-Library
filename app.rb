@@ -31,7 +31,7 @@ class App
       puts 'No record is found'
     else
       loaded_people.each_with_index do |person, i|
-        puts "(#{i}) #{person['type'] == "student" ? '[Student]' : '[Teacher]'},  Name: '#{person['name']}', Id: '#{person['id']}', Age: '#{person['age']}'"
+        puts "(#{i}) #{person['type'] == 'student' ? '[Student]' : '[Teacher]'},  Name: '#{person['name']}', Id: '#{person['id']}', Age: '#{person['age']}'"
       end
     end
   end
@@ -42,12 +42,14 @@ class App
 
     if loaded_rentals.empty?
       puts 'No record is found'
-    else 
+    else
       print 'Enter person id: '
       id = gets.chomp.to_i
 
       loaded_rentals.each do |rental|
-        print "Date: #{rental['date']}, Title: '#{rental['book_title']}', Author: '#{rental['book_author']}'\n" if id == rental['person_id']
+        if id == rental['person_id']
+          print "Date: #{rental['date']}, Title: '#{rental['book_title']}', Author: '#{rental['book_author']}'\n"
+        end
       end
     end
   end

@@ -1,5 +1,5 @@
 require './rental'
-require './persist.rb'
+require './persist'
 
 class CreateRental
   def initialize(rent)
@@ -9,7 +9,7 @@ class CreateRental
   def create_rental(app)
     book, person, date = collect_data(app)
     choosen_book = load_book_store[book]
-    new_book = Book.new(choosen_book['title'],choosen_book['author'] )
+    new_book = Book.new(choosen_book['title'], choosen_book['author'])
 
     chosen_person = load_person_store[person]
     new_person = Person.new(chosen_person['age'], chosen_person['name'], chosen_person['id'])
@@ -43,6 +43,7 @@ class CreateRental
     load_books = Persist.new('books.json')
     load_books.load
   end
+
   def load_person_store
     load_person = Persist.new('person.json')
     load_person.load
@@ -53,7 +54,8 @@ class CreateRental
     rentals = stored_rentals.load
 
     @rentals.each do |rental|
-      rentals << {date: rental.date, book_title: rental.book.title, book_author: rental.book.author, person_name: rental.person.name, person_id: rental.person.id}
+      rentals << { date: rental.date, book_title: rental.book.title, book_author: rental.book.author,
+                   person_name: rental.person.name, person_id: rental.person.id }
     end
     stored_rentals.save(rentals)
   end

@@ -11,12 +11,12 @@ class CreatePerson
     when 1
       new_student = create_student
       add_to_collection(new_student)
-      store_person("student")
+      store_person('student')
 
     when 2
       new_teacher = create_teacher
       add_to_collection(new_teacher)
-      store_person("teacher")
+      store_person('teacher')
 
     else
       puts 'Sorry, The selected option is not defined '

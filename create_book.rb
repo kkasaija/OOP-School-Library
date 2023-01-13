@@ -1,4 +1,4 @@
-require './persist.rb'
+require './persist'
 
 class CreateBook
   def initialize(book)
