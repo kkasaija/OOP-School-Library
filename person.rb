@@ -22,6 +22,10 @@ class Person < Nameable
     @parent_permission || @age >= 18
   end
 
+  def add_rental(date, book)
+    Rental.new(date, book, self)
+  end
+
   private
 
   def of_age
@@ -30,10 +34,6 @@ class Person < Nameable
 
   def correct_name
     @name
-  end
-
-  def add_rental(date, book)
-    Rental.new(date, book, self)
   end
 end
 
