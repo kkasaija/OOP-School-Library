@@ -1,4 +1,4 @@
-require_relative '../student'
+require './spec_helper'
 
 describe Classroom do
   classroom = Classroom.new('Primary 7')
